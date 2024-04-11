@@ -2,10 +2,12 @@
     /* padding: 0 210px; */
     /* border: 1px solid red; */
     display: flex;
+
 }
 .secStyle > div {
     flex: 1;
-
+    
+    
 }
 .leftSec {
     /* border:1px solid blue; */
@@ -17,7 +19,7 @@
     background-color: #fbfaf3;
     padding-right: 210px;
     position: relative;
-
+    
 }
 .leftSec p{
     margin: 0;
@@ -44,12 +46,13 @@
 }
 .container{
     display: flex;
-    align-items: center;
+    height: 100;
+    align-items:center;
     gap: 40px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .container > p{
-    font-size: 30px;
+    font-size: 60px;
 
 }
 .btnStyle{
@@ -58,6 +61,7 @@
     padding: 0 10px;
     border-radius: 7px;
     color: black;
+    font-size: large;
 
 }
 .usersWrap{
@@ -70,14 +74,34 @@
 .growthInfo > p{
     font-size: 20px;
 }
+.shapeboy{
+    position: absolute;
+    left: 150px;
+    top: -10px;
+    
+}
 .shapeOne{
     position: absolute;
-    left: 200px;
-    top: 130px;
+    left: 350px;
+    top: 90px;
+    z-index: 1;
 
 }
 .shapeTwo{
     position: absolute;
-    left: 320px;
-    top: 100px;
+    left: 470px;
+    top: 40px;
+    z-index: 1;
+}
+.circle{
+    position: absolute;
+    left: -72px;
+    top: 80px;
+    z-index: 1;
+}
+.halfcircle{
+    position: absolute;
+    left: 690px;
+    top: 200px;
+    z-index: -1;
 }

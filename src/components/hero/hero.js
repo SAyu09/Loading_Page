@@ -6,7 +6,8 @@ import vector from '../../images/Vector.png'
 import users from '../../images/users.svg'
 import shape from '../../images/Shape.svg'
 import shape2 from '../../images/Shape-2.svg'
-
+import circle from '../../images/Shape -4.png'
+import halfcircle from "../../images/Shape (3).png"
 export default function HeroSection () {
     return (
         <section className={styles.secStyle}>
@@ -34,13 +35,17 @@ export default function HeroSection () {
                         <p>12.5%</p>
                         <p>Groth on hits</p>
                     </div>
-
+                
+                   <img src = {halfcircle} alt=''className={styles.halfcircle}/>
+                
                 </div>
             </div>
             <div className={styles.rightSec}>
-                <img src = {boy} alt=''/>
+                <img src = {boy} alt=''className={styles.shapeboy}/>
                 <img src = {shape} className={styles.shapeOne} alt=''/>
                 <img src = {shape2} className={styles.shapeTwo} alt=''/>
+                <img src = {circle} className={styles.circle} alt=''/>
+                 
             </div>
         </section>
     )

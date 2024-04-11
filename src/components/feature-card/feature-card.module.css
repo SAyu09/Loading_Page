@@ -26,3 +26,8 @@
     margin-top: 20px;
     color: black !important;
 }
+.btnStyle:hover {
+    background-color: #ffa500; 
+    color: white; 
+    box-shadow: 0 0 5px #ea9a06; 
+}

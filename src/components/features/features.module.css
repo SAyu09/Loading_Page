@@ -1,4 +1,4 @@
-.secStyle{
+.secStyle {
     background-color: #796eff;
     padding: 40px 200px;
     display: flex;
@@ -7,23 +7,25 @@
     box-sizing: border-box;
     position: relative;
 }
-.cards{
+
+.cards {
     display: flex;
     gap: 30px;
 }
 
-.cards > :nth-child(2){
+.cards > :nth-child(2) {
     /* margin-top: -70px; */
 }
+
 .info {
     color: white;
-
-
 }
+
 .info > h6 {
     font-size: 45px;
     margin: 0;
 }
+
 .leftPic {
     position: absolute;
     left: 0;
@@ -31,8 +33,28 @@
     /* bottom: 0; */
     height: 100%;
 }
+
 .rightPic {
     position: absolute;
     right: 0;
     height: 100%;
+}
+
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .secStyle {
+        padding: 40px 20px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch; /* Stretch items to fill width */
+        gap: 20px; /* Reduce gap between elements */
+    }
+
+    .cards {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .rightPic, .leftPic {
+        display: none; /* Hide side pictures on smaller screens */
+    }
 }
